@@ -2,7 +2,7 @@ import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 const Login = lazy(() => import('auth/Login'));
-const Register = lazy(() => import('auth/Register'));
+const Register = lazy(() => import('auth-/Register'));
 const EditProfilePopup = lazy(() => import('profile/EditProfilePopup'));
 const EditAvatarPopup = lazy(() => import('profile/EditAvatarPopup'));
 const ImagePopup = lazy(() => import('gallery/ImagePopup'));
