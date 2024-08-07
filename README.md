@@ -56,29 +56,6 @@
 Настроил маршрутизацию (как не знакомый с фронтовыми штуками человек)
 1. Настроил App.js и index.js для использования React Router и загрузки компонентов через React.lazy
 
-Итоговая структура проекта
-frontend/
-├── auth-microfrontend/
-│   ├── src/
-│   │   └── components/
-│   └── webpack.config.js
-├── gallery-microfrontend/
-│   ├── src/
-│   │   └── components/
-│   └── webpack.config.js
-├── likes-microfrontend/
-│   ├── src/
-│   │   └── components/
-│   └── webpack.config.js
-├── profile-microfrontend/
-│   ├── src/
-│   │   └── components/
-│   └── webpack.config.js
-├── common/
-│   └── components/
-├── src/
-│   └── index.js
-├── webpack.config.js
 
 
 # Задание 2
