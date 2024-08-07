@@ -1,11 +1,12 @@
 const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 module.exports = {
   entry: './src/index.js',
   mode: 'development',
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
+    contentBase: path.join(__dirname, 'public'),
     port: 3000,
     historyApiFallback: true,
   },
@@ -41,6 +42,9 @@ module.exports = {
         react: { singleton: true, eager: true, requiredVersion: '^17.0.1' },
         'react-dom': { singleton: true, eager: true, requiredVersion: '^17.0.1' }
       },
+    }),
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, 'public', 'index.html'),
     }),
   ],
 };
